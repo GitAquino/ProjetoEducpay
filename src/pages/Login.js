@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import '../styles/Login.css';
-import '../components/Logo_Horizontal_educpay 1.jpg'
+import logo from '../components/Logo_Horizontal_educpay 1.png';
 
 
 const Login = () => {
@@ -15,35 +15,45 @@ const Login = () => {
 
   return (
     <div id='TelaInteira'>
-        <div className="login-container">
-        <form onSubmit={handleSubmit} className="login-form">
-
-            <h2>Bem vindo(a) de volta!</h2>
-            <p>Ainda não tem uma conta? Cadastre-se</p>
-            <div className="form-group">
-            <label>Email ou Telefone:</label>
+      <div className="loginContainer">
+        <form onSubmit={handleSubmit} className="formularioLogin">
+          <img id='LogoEducpay' src={logo} alt='Logo Educpay' />
+          <h2>Bem-vindo(a) de volta!</h2>
+          <p>Ainda não tem uma conta? <a href='www.google.com' target="_blank" rel="noopener noreferrer">Cadastrar-se</a></p>
+          <div className="formularioComponentes">
+            <label>Email ou Telefone</label>
             <input
-                type="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                required
+              type="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              required
             />
-            </div>
-            <div className="form-group">
-            <label>Password:</label>
+          </div>
+          <div className="formularioComponentes">
+            <label>Senha</label>
             <input
-                type="password"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-                required
+              type="password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              required
             />
+          </div>
+          <button type="submit" className="botaoLogin"><strong>Entrar</strong></button>
+          <p id="esqueciSenha"><a href='www.google.com'>Esqueci a senha</a></p>
+          <p id="entreComOpcoes">
+            <span className="linha"></span>
+            Ou entre com
+            <span className="linha"></span>
+          </p>
+          <div className="botoesContainer">
+                <button className="botao">google</button>
+                <button className="botao">facebook</button>
             </div>
-            <button type="submit" className="login-button">Login</button>
         </form>
-        </div>
-        <div className='LoginImage'>
-
-        </div>  
+      </div>
+      <div className='LoginImage'>
+        {/* Aqui você pode adicionar outra imagem, se necessário */}
+      </div>  
     </div>
   );
 };
