@@ -17,9 +17,9 @@ const Login = () => {
     <div id='TelaInteira'>
       <div className="loginContainer">
         <form onSubmit={handleSubmit} className="formularioLogin">
-          <img id='LogoEducpay' src={logo} alt='Logo Educpay' />
+          <img id='LogoEducpay' src={logo} alt='Logo Educpay' width={130}/>
           <h2>Bem-vindo(a) de volta!</h2>
-          <p>Ainda não tem uma conta? <a href='www.google.com' target="_blank" rel="noopener noreferrer">Cadastrar-se</a></p>
+          <p id='subtitulo'>Ainda não tem uma conta? <a href='www.google.com' target="_blank" rel="noopener noreferrer">Cadastrar-se</a></p>
           <div className="formularioComponentes">
             <label>Email ou Telefone</label>
             <input
@@ -46,9 +46,10 @@ const Login = () => {
             <span className="linha"></span>
           </p>
           <div className="botoesContainer">
-                <button className="botao">google</button>
-                <button className="botao">facebook</button>
-            </div>
+                <button className="botaoGoogle">Google</button>
+                <button className="botaoFacebook">Facebook</button>
+          </div>
+          <p id="Termos">Confira nossos <a href='www.google.com'>Termos e Condições</a></p>
         </form>
       </div>
       <div className='LoginImage'>

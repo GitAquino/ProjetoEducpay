@@ -1,3 +1,7 @@
+* {
+  box-sizing: inherit; 
+}
+
 html, body {
   margin: 0;
   padding: 0;
@@ -5,17 +9,30 @@ html, body {
   box-sizing: border-box; 
 }
 
-* {
-  box-sizing: inherit; 
-}
-
 body {
   font-family: 'Inter', sans-serif; 
 }
 
+#TelaInteira{
+  background-color: #23252E;
+  height: 100vh;
+}
+
+.img{
+  size: 100px;
+}
+
+#subtitulo{
+  position: relative;
+  bottom: 20px;
+}
+
 .loginContainer {
+  /* padding: 20px; */
+  position: relative;
   display: flex;
-  justify-content: center;
+  justify-content: left;
+  margin-left: 40px;
   align-items: center;
   height: 100vh;
   background-color: #23252E;
@@ -26,7 +43,7 @@ body {
   background: #23252E;
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  /* box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); */
 }
 
 .formularioLogin Label{
@@ -49,6 +66,7 @@ body {
   
 .formularioLogin h2 {
   margin-bottom: 20px;
+  font-size: 30px;
 }
   
 .formularioComponentes {
@@ -56,6 +74,8 @@ body {
 }
   
 .formularioComponentes label {
+  position: relative;
+  top: 5px;
   display: block;
   margin-bottom: 5px;
 }
@@ -126,6 +146,31 @@ body {
   margin: 0 10px; 
 }
 
-.formularioComponentes botoesContainer{
+.botoesContainer{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 5px;
+  gap: 20px;
+}
+
+.botaoGoogle, .botaoFacebook{
+  padding: 10px 20px;
+  margin: 5px 0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  color: white;
   background-color: #23252E;
+  border: 1px solid #72768B; 
+  position: relative;
+  top: 5px;
+  width: 100%;
+}
+
+#Termos{
+  position: relative;
+  top: 3px;
+  text-align: center;
 }
