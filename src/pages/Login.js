@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import '../styles/Login.css';
 import logo from '../components/Logo_Horizontal_educpay 1.png';
+import iconFacebook from '../components/icons8-facebook-48.png';
+import { FcGoogle } from "react-icons/fc";
+import { MdVisibilityOff } from "react-icons/md";
 
 
 const Login = () => {
@@ -31,12 +34,15 @@ const Login = () => {
           </div>
           <div className="formularioComponentes">
             <label>Senha</label>
+            <div className="inputIconContainer">
             <input
               type="password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               required
-            />
+              
+            /><MdVisibilityOff className='iconSenha' id='iconSenha'/>
+            </div>
           </div>
           <button type="submit" className="botaoLogin"><strong>Entrar</strong></button>
           <p id="esqueciSenha"><a href='www.google.com'>Esqueci a senha</a></p>
@@ -46,15 +52,15 @@ const Login = () => {
             <span className="linha"></span>
           </p>
           <div className="botoesContainer">
-                <button className="botaoGoogle">Google</button>
-                <button className="botaoFacebook">Facebook</button>
+                <button className="botaoGoogle"><FcGoogle className='icon'/>Google</button>
+                <button className="botaoFacebook"><img className='icon' src={iconFacebook} alt='Icon Facebook' width={18}/>Facebook</button>
           </div>
           <p id="Termos">Confira nossos <a href='www.google.com'>Termos e Condições</a></p>
         </form>
-      </div>
-      <div className='LoginImage'>
+        <div className='LoginImage'>
         {/* Aqui você pode adicionar outra imagem, se necessário */}
       </div>  
+      </div>
     </div>
   );
 };
