@@ -56,6 +56,7 @@ const Login = () => {
                 <button className="botaoFacebook"><img className='icon' src={iconFacebook} alt='Icon Facebook' width={18}/>Facebook</button>
           </div>
           <p id="Termos">Confira nossos <a href='www.google.com'>Termos e Condições</a></p>
+          <div className='footer'></div>
         </form>
         <div className='LoginImage'>
         {/* Aqui você pode adicionar outra imagem, se necessário */}
