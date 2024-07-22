@@ -1,0 +1,241 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  html, body {
+    height: 100%;
+    width: 100%;
+    background-color: #23252E;
+    font-family: 'Inter', sans-serif;
+  }
+
+  input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+  }
+
+  input[type=number] { 
+   -moz-appearance: textfield;
+   appearance: textfield;
+  }
+  
+  .TelaInteira {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .cadastroContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .formularioCadastro {
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    flex: 1;
+    max-width: 450px;
+    background-color: #23252E;
+  }
+  
+  .formularioCadastro h2 {
+    font-size: 30px;
+  }
+  
+  #subtitulo {
+    font-size: 14px;
+    color: #72768B;
+    margin-bottom: 40px;
+  }
+  
+  #subtituloLink {
+    color: #0AEACC;
+    text-decoration: none;
+  }
+  
+  #subtituloLink:hover {
+    color: #119684;
+  }
+  
+  .formularioComponentes {
+    margin-bottom: 15px;
+    margin-top: 10px;
+  }
+  
+  .formularioComponentes label {
+    margin-bottom: 3px;
+    display: block;
+    font-size: small;
+  }
+  
+  .formularioComponentes input {
+    width: 100%;
+    padding: 10px;
+    background-color: #23252E;
+    border: 1px solid #72768B;
+    border-radius: 5px;
+    outline: none;
+    color: #ffff;
+  }
+  
+  .formularioComponentes input:focus {
+    border-color: #0AEACC;
+    box-shadow: 0 0 5px rgba(10, 234, 204, 0.5);
+  }
+  
+  .inputIconContainer {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .inputIconContainer .iconSenha {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    color: #72768B;
+  }
+  
+  .botaoCadastrar {
+    margin-top: 20px;
+    width: 100%;
+    padding: 12px;
+    background-color: #0AEACC;
+    color: #23252E;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .botaoCadastrar:hover {
+    background-color: #119684;
+  }
+  
+  #esqueciSenha {
+    margin-top: 5px;
+    color: #72768B;
+    text-align: center;
+    font-size: small;
+  }
+  
+  #esqueciSenha a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  #esqueciSenha a:hover {
+    color: #9399b6;
+  }
+  
+  #Termos {
+    margin-top: 5px;
+    color: #72768B;
+    text-align: center;
+    font-size: x-small;
+  }
+  
+  #TermosLink {
+    text-align: center;
+    text-decoration: none;
+    color: #0AEACC;
+  }
+  
+  #TermosLink:hover {
+    color: #119684;
+  }
+  
+  .icon {
+    position: relative;
+    bottom: 1px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .requisitosSenha {
+    font-size: small;
+    color: #72768B;
+  }
+  
+  #requisitoMargem {
+    margin-top: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .cadastroContainer {
+      flex-direction: column;
+    }
+  
+    .formularioCadastro {
+      margin-bottom: 20px;
+      max-width: 100%;
+    }
+  
+    .CadastroImage {  
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  
+  @media (min-width: 769px) {
+    .formularioComponentesDuplo {
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    .formularioComponentesDuplo input {
+      width: 100%;
+      padding: 10px; 
+    }
+  }
+  
+  #inputEmail{
+    width: 55%;
+  }
+
+  #inputTelefone{
+    width: 40%;
+  }
+
+  #inputData{
+    width: 45%;
+  }
+
+  #inputCPF{
+    width: 50%;
+  }
+
+  #inputSenha{
+    width: 47%;
+  }
+
+  #inputConfirmarSenha{
+    width: 47%;
+  }
+
+  .CadastroImage {
+    position: relative;
+    right: 0px;
+    padding: 0;
+  }
+
+  
+.CadastroImage {
+  right: 0px;
+  width: 50%;
+  position: absolute;
+  justify-content: right;
+}
+
+.CadastroImage img {
+  width: 100%; /* Ajusta a largura da imagem para ocupar 100% da div pai */
+  height: 100%; /* Ajusta a altura da imagem para ocupar 100% da div pai */
+  object-fit: cover; /* Garante que a imagem cubra todo o espaço da div */
+  border-radius: 8px; /* Opcional: Adiciona borda arredondada */
+}
