@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import '../styles/Cadastro.css';
-import logo from '../components/Logo_Horizontal_educpay 1.png';
-import ImgCadastro from '../components/image_6.png'
+import logo from '../assets/Logo_Horizontal_educpay 1.png';
+import ImgCadastro from '../assets/image_6.png'
 import { MdVisibilityOff } from "react-icons/md";
 
 const Cadastro = () => {

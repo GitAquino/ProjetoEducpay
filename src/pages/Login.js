@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import '../styles/Login.css';
-import logo from '../components/Logo_Horizontal_educpay 1.png';
-import iconFacebook from '../components/icons8-facebook-48.png';
-import ImgLogin from '../components/image_6.png'
+import logo from '../assets/Logo_Horizontal_educpay 1.png';
+import iconFacebook from '../assets/icons8-facebook-48.png';
+import ImgLogin from '../assets/image_6.png'
 import { FcGoogle } from "react-icons/fc";
 import { MdVisibilityOff } from "react-icons/md";
 
