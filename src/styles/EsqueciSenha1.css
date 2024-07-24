@@ -1,93 +1,98 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  
-  html, body {
-    height: 100%;
-    min-height: 100vh;
-    width: 100%;
-    background-color: #23252E;
-    font-family: 'Inter', sans-serif;
-  }
-  
-  body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    text-align: center;
-    position: relative;
-    bottom: 0;
-    border-top: 30px;
-    }
-  
-  .mensagem {
-    color: #ffff;
-    margin-bottom: 20px;
-  }
-  
-  .container #titulo {
-    color: #ffff;
-    font-size: xx-large;
-  }
-  
-  .container #subtitulo {
-    color: #0AEACC;
-    font-size: small;
-  }
-  
-  #form {
-    width: 100%;
-    max-width: 400px;
-    display: absolute;
-    flex-direction: column;
-    align-items: center;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  min-height: 100vh;
+  width: 100%;
+  background-color: #23252E;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  border-top: 30px;
   }
 
-  .container label {
-    margin-bottom: 3px;
-    display: flex;
-    font-size: small;
-    justify-content: left;
-    color: #ffff;
-  }
-  
-  #email {
-    width: 100%;
-    padding: 10px;
-    background-color: #23252E;
-    border: 1px solid #72768B;
-    border-radius: 5px;
-    outline: none;
-    color: #ffff;
-    margin-bottom: 10px;
-  }
-  
-  #botaoEnviar {
-    width: 100%;
-    padding: 12px;
-    background-color: #0AEACC;
-    color: #23252E;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  #botaoEnviar:hover {
-    background-color: #119684;
-  }
-  
-  #imagem {
-    margin-top: 20px;
-  }
+.mensagem {
+  color: #ffff;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.container #titulo {
+  color: #ffff;
+  font-size: xx-large;
+}
+
+.container #subtitulo {
+  color: #0AEACC;
+  font-size: normal;
+}
+
+#form {
+  width: 100%;
+  max-width: 400px;
+  display: absolute;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  top: 30px;
+}
+
+.container label {
+  margin-bottom: 3px;
+  display: flex;
+  font-size: small;
+  justify-content: left;
+  color: #ffff;
+}
+
+#email {
+  width: 100%;
+  padding: 10px;
+  background-color: #23252E;
+  border: 1px solid #72768B;
+  border-radius: 5px;
+  outline: none;
+  color: #ffff;
+  margin-bottom: 10px;
+}
+
+#botaoEnviar {
+  width: 100%;
+  padding: 12px;
+  background-color: #0AEACC;
+  color: #23252E;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#botaoEnviar:hover {
+  background-color: #119684;
+}
+
+#imagem {
+  position: relative;
+  top: 60px;
+  /* margin-top: 20px; */
+}
