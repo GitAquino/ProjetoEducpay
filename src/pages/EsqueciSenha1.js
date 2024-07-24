@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import logoEducpay from '../assets/Logo_Horizontal_educpay 1.png';
 import imagemEsqueciSenha from '../assets/ImagemTelaEsqueciSenha (1).png';
-import '../styles/EsqueciSenha.css';
+import '../styles/EsqueciSenha1.css';
 
-const EsqueciSenha = () => {
+const EsqueciSenha1 = () => {
   const [email, setEmail] = useState('');
 
   const handleSubmit = (e) => {
@@ -39,4 +39,4 @@ const EsqueciSenha = () => {
   );
 };
 
-export default EsqueciSenha;
+export default EsqueciSenha1;
